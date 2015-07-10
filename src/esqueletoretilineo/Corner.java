@@ -19,7 +19,7 @@ public class Corner {
    
    public Corner(Edge link){
        this.link = link;
-       this.speed = 1f;
+       this.speed = 0.1f;
        this.lastAngles = new ArrayList<>();
    }
    

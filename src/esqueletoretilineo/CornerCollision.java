@@ -27,9 +27,7 @@ public class CornerCollision implements Collision{
 
     @Override
     public void ApplyCollision() {
-        float v = value;
-        float v2 = value;
-        if(value <= 3f && corners.contains(c1) && corners.contains(c2)){
+        if(value <= 0.5f && corners.contains(c1) && corners.contains(c2)){
             Corner c = new Corner(c1.link.destination.clone());
             c2.swapRightEdge(c);
             c1.swapLeftEdge(c);
